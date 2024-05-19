@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Landing Page</title>
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+    <style>
+      .body {
+        font-family: 'Poppins';
+      }
+
+      .custom-margin {
+        margin-left: 200px;
+      }
+
+      @media (max-width: 768px) {
+        .custom-margin {
+          margin-left: 0;
+        }
+      }
+
+      #home {
+        background: url('./gambar/header-image.png') no-repeat center;
+        background-size: cover;
+        width: 100%;
+        position: relative;
+        text-shadow: #000000 -3px -3px 5px;
+      }
+
+      .navbar-nav .nav-link {
+        position: relative;
+        padding-bottom: 5px;
+        transition: border-bottom 0.3s ease, color 0.3s ease;
+        color: white;
+      }
+
+      .navbar-nav .nav-link::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        height: 2px;
+        background-color: transparent;
+        transition: width 0.3s ease;
+      }
+
+      .navbar-nav .nav-link:hover::after,
+      .navbar-nav .nav-link.active::after {
+        width: 100%;
+        background-color: #0d6efd;
+      }
+
+      .navbar-nav .nav-link:hover,
+      .navbar-nav .nav-link.active {
+        color: #0d6efd;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-black">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="./gambar/logo.png" alt="" height="50" class="d-inline-block align-middle" />
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto fw-semibold">
+            <li class="nav-item mx-2">
+              <a class="nav-link active" href="#home">HOME</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link" href="#about">ABOUT</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link" href="#skill">SKILL</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link" href="#portofolio">PORTOFOLIO</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link" href="#contact">CONTACT</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar -->
+    <!-- Home -->
+    <section id="home">
+      <div class="container d-flex align-items-center align-middle" style="height: 110vh">
+        <div class="row ms-2 ms-md-0">
+          <div class="col-12">
+            <h4 class="text-white">Hallo, I'am</h4>
+            <h4 class="text-white fw-bold text-uppercase">Hidayat Hatta Irsyad,</h4>
+            <h5 class="text-white">a student of the University of Riau class of 2022.</h5>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Home -->
+
+    <!-- About Me -->
+    <section id="about" class="px-2 px-md-0" style="background-color: whitesmoke">
+      <div class="container-fluid py-4">
+        <div class="row text-center my-3 my-md-5">
+          <h3 class="fw-bold">ABOUT ME</h3>
+        </div>
+        <div class="row text-center mb-5">
+          <div class="col-md-6 d-flex justify-content-center">
+            <p style="width: 500px">
+              Allow me to introduce myself! I'm Hidayat Hatta, a twenty-year-old individual who is passionately dedicated to exploring the fascinating realms of knowledge and growth. Currently, I am immersed in the dynamic academic
+              environment of the University of Riau, where I eagerly embrace every opportunity to expand my horizons and cultivate a deeper understanding of the world around me. With a fervent curiosity and a thirst for learning, I am
+              constantly seeking new experiences and insights to enrich my personal and academic journey. Join me as I embark on this exhilarating adventure of discovery and self-discovery!
+            </p>
+          </div>
+          <div class="col-md-6 mt-3 mt-md-0">
+            <img src="./gambar/unri.png" alt="..." style="border-radius: 10px; min-width: 80%; max-width: 100%; height: 250px; object-fit: cover" class="shadow" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- About Me -->
+    <!-- Skill -->
+    <section id="skill" class="pt-5 pb-4 bg-dark">
+      <div class="container-fluid">
+        <div class="row text-center mb-5 mb-md-4 text-white">
+          <h3 class="fw-bold">SKILL</h3>
+        </div>
+        <div class="row text-center align-items-center justify-content-center mb-5">
+          <div class="col-md-2 d-flex flex-column align-items-center my-4 my-md-2 mx-2">
+            <div class="icon-background d-flex justify-content-center align-items-center mb-2 bg-primary" style="width: 100px; height: 100px; border-radius: 50%">
+              <i class="fa-solid fa-laptop" style="font-size: 45px; color: whitesmoke"></i>
+            </div>
+            <p class="text-white fw-bolder mt-2">WEB DEVELOPMENT</p>
+          </div>
+          <div class="col-md-2 d-flex flex-column align-items-center my-4 my-md-2 mx-2">
+            <div class="icon-background d-flex justify-content-center align-items-center mb-2 bg-primary" style="width: 100px; height: 100px; border-radius: 50%">
+              <i class="bi bi-android2" style="font-size: 45px; color: whitesmoke"></i>
+            </div>
+            <p class="text-white fw-bolder mt-2">ANDROID DEVELOPMENT</p>
+          </div>
+          <div class="col-md-2 d-flex flex-column align-items-center my-4 my-md-2 mx-2">
+            <div class="icon-background d-flex justify-content-center align-items-center mb-2 bg-primary" style="width: 100px; height: 100px; border-radius: 50%">
+              <i class="fa-solid fa-database" style="font-size: 45px; color: whitesmoke"></i>
+            </div>
+            <p class="text-white fw-bolder mt-2">DATABASE PROGRAMMING</p>
+          </div>
+          <div class="col-md-2 d-flex flex-column align-items-center my-4 my-md-2 mx-2">
+            <div class="icon-background d-flex justify-content-center align-items-center mb-2 bg-primary" style="width: 100px; height: 100px; border-radius: 50%">
+              <i class="fa-solid fa-palette" style="font-size: 45px; color: whitesmoke"></i>
+            </div>
+            <p class="text-white fw-bolder mt-2">UI/UX DESIGN</p>
+          </div>
+          <div class="col-md-2 d-flex flex-column align-items-center my-4 my-md-2 mx-2">
+            <div class="icon-background d-flex justify-content-center align-items-center mb-2 bg-primary" style="width: 100px; height: 100px; border-radius: 50%">
+              <i class="bi bi-diagram-3" style="font-size: 50px; color: whitesmoke"></i>
+            </div>
+            <p class="text-white fw-bolder mt-2">DATABASE MODELER</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Skill -->
+    <!-- Portofolio -->
+    <section id="portofolio">
+      <div class="container-fluid py-3" style="background-color: whitesmoke">
+        <div class="row text-center mt-5 mb-3">
+          <h3 class="fw-bold">PORTOFOLIO</h3>
+        </div>
+        <div class="row mb-5 justify-content-center">
+          <div class="col-lg-3 d-flex flex-column align-items-center my-2">
+            <div class="card shadow" style="width: 18rem; height: 16rem" data-bs-toggle="modal" data-bs-target="#project1">
+              <div style="height: 140px; overflow: hidden">
+                <img src="./gambar/Screenshot 2024-05-18 115814.png" class="card-img-top" alt="..." style="height: 100%; width: 100%; object-fit: cover" />
+              </div>
+              <div class="card-body">
+                <p class="card-text text-center text-capitalize">Redesign web universitas Riau</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 d-flex flex-column align-items-center my-2">
+            <div class="card shadow" style="width: 18rem; height: 16rem" data-bs-toggle="modal" data-bs-target="#project2">
+              <div style="height: 140px; overflow: hidden">
+                <img src="./gambar/parkiran.png" class="card-img-top" alt="..." style="height: 100%; width: 100%; object-fit: cover" />
+              </div>
+              <div class="card-body">
+                <p class="card-text text-center text-capitalize">Pembuatan aplikasi parkiran menggunakan bahasa pemrograman JAVA.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 d-flex flex-column align-items-center my-2">
+            <div class="card shadow" style="width: 18rem; height: 16rem" data-bs-toggle="modal" data-bs-target="#project3">
+              <div style="height: 140px; overflow: hidden">
+                <img src="./gambar/daspro.png" class="card-img-top" alt="..." style="height: 100%; width: 100%; object-fit: cover" />
+              </div>
+              <div class="card-body">
+                <p class="card-text text-center text-capitalize">Pembuatan tabel dengan konsep CRUD menggunakan React Js</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 d-flex flex-column align-items-center my-2">
+            <div class="card shadow" style="width: 18rem; height: 16rem" data-bs-toggle="modal" data-bs-target="#project4">
+              <div style="height: 140px; overflow: hidden">
+                <img src="./gambar/db.png" class="card-img-top" alt="..." style="height: 100%; width: 100%; object-fit: cover" />
+              </div>
+              <div class="card-body">
+                <p class="card-text text-center text-capitalize">Pemodelan ERD menggunakan datamodeler</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Portofolio -->
+    <!-- Contact -->
+    <section id="contact" class="bg-dark">
+      <div class="container-fluid py-3 px-4">
+        <div class="row text-center text-white mt-5">
+          <h3 class="fw-bold pb-4">CONTACT</h3>
+        </div>
+        <div class="row text-center mb-5">
+          <div class="col-md-3"></div>
+          <div class="col-md-6">
+            <form>
+              <div class="mb-3">
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email" />
+              </div>
+              <div class="mb-3">
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" />
+              </div>
+              <div class="mb-3">
+                <textarea class="form-control" id="exampleInputMessage1" placeholder="Message" style="height: 150px; text-align: left; vertical-align: top; width: 100%"></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary rounded-4" style="width: 40vh">Send Message</button>
+            </form>
+          </div>
+          <div class="col-md-3"></div>
+        </div>
+      </div>
+    </section>
+    <!-- Contact -->
+    <!-- Footer -->
+    <div class="container-fluid pt-3 bg-black">
+      <div class="row">
+        <div class="col-md-3">
+          <p class="text-white-50 text-md-end text-center fst-italic">Copyright By Hidayat Hatta Irsyad</p>
+        </div>
+      </div>
+    </div>
+    <!-- Footer -->
+
+    <!-- Modal -->
+    <div class="modal fade" id="project1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Web Design Programming</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body d-flex flex-column align-items-center">
+            <img src="./gambar/Screenshot 2024-05-18 115814.png" alt="" width="350px" style="max-width: 100%" />
+            <p class="text-center mt-3" style="width: 400px">Project ini merupakan UTS dari matakuliah Web Design Programming</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary rounded-5" data-bs-dismiss="modal">Close</button>
+            <a href="https://hidayathatta.github.io/Midterm-Exam-Web-Programming-Design/" class="btn btn-primary rounded-5">Click Here</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="project2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Object Oriented Programming</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body d-flex flex-column align-items-center">
+            <img src="./gambar/parkiran.png" alt="" width="350px" style="max-width: 100%" />
+            <p class="text-center mt-3" style="width: 400px">Project ini merupakan UAS praktikum dari matakuliah Object Oriented Programming</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary rounded-5" data-bs-dismiss="modal">Close</button>
+            <a href="https://github.com/HidayatHatta/Parkiran-Java" class="btn btn-primary rounded-5">Click Here</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="project3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Dasar Pemrograman</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body d-flex flex-column align-items-center">
+            <img src="./gambar/daspro.png" alt="" width="350px" style="max-width: 100%" />
+            <p class="text-center mt-3" style="width: 400px">Project ini merupakan UAS dari matakuliah Dasar Pemrograman</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary rounded-5" data-bs-dismiss="modal">Close</button>
+            <a href="https://github.com/HidayatHatta/UAS-Dasar-Pemrograman-TI-UNRI-2022/tree/main/uas-dasar-pemrograman" class="btn btn-primary rounded-5">Click Here</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="project4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Database Modeler</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body d-flex flex-column align-items-center">
+            <img src="./gambar/db.png" alt="" width="350px" style="max-width: 100%" />
+            <p class="text-center mt-3" style="width: 400px">Project ini merupakan UAS dari matakuliah Basis Data</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary rounded-5" data-bs-dismiss="modal">Close</button>
+            <a href="https://drive.google.com/drive/folders/19clsCsscWZp53wb3J8xmoqsk5EAhyPSf?usp=sharing" class="btn btn-primary rounded-5">Click Here</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        const sections = document.querySelectorAll('section[id]');
+
+        window.addEventListener('scroll', scrollActive);
+
+        function scrollActive() {
+          const scrollY = window.pageYOffset;
+
+          sections.forEach((current) => {
+            const sectionHeight = current.offsetHeight;
+            const sectionTop = current.offsetTop - 50;
+            const sectionId = current.getAttribute('id');
+
+            if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+              document.querySelector('.navbar-nav a[href*=' + sectionId + ']').classList.add('active');
+            } else {
+              document.querySelector('.navbar-nav a[href*=' + sectionId + ']').classList.remove('active');
+            }
+          });
+        }
+      });
+    </script>
+  </body>
+</html>
